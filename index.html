@@ -22,16 +22,18 @@
                         <h2 class="card-title text-2xl text-center">Triangle</h2>
                         <p class="text-center text-xl">Area (A) = 0.5 * b *h</p>
                         <div>
-                            <input class="w-20 pl-2 rounded-md" type="text" placeholder="B">
+                            <input id="base-input" class="w-20 pl-2 rounded-md" type="text" placeholder="B">
                             <span class="ml-2 mr-2">cm</span>
-                            <input class="w-20 pl-2 rounded-md" type="text" placeholder="H">
+                            <input id="height-input" class="w-20 pl-2 rounded-md" type="text" placeholder="H">
                             <span class="ml-2 mr-2">cm</span>
                         </div>
-                        <div onclick="calculatetriangle()" class="card-actions">
+                        <div>Area <span id="area-text"></span> <span>cm<sup>2</sup></span> </div>
+                        <div onclick="ractanglecalculte()" class="card-actions">
                             <button class="btn btn-primary w-full">Buy Now</button>
                         </div>
                     </div>
                 </div>
+                
                 <!-- trangle card  -->
                 <div class="card w-80 bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
