@@ -108,6 +108,54 @@
                         </div>
                     </div>
                 </div>
+                <!-- Pentagon card  -->
+                <div class="card w-80 bg-base-100 shadow-xl border-2 border-stone-300 px-2 py-8">
+                    <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) = 0.5 * p * b</p>
+                        <div>
+                            <input id="pen-peri" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="perimeter">
+                            <span class=" mr-2 text-xl">cm</span>
+                            <input id="pen-apo" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="apothem">
+                            <span class=" text-xl">cm</span>
+                        </div>
+                        <div>
+                            <span >Area</span>
+                            <span id="pen-area"></span>
+                            <span>cm<sup>2</sup></span>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="pentagonCalculation()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rhombus card  -->
+                <div class="card w-80 bg-base-100 shadow-xl border-2 border-stone-300 px-2 py-8">
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 * d1 * d2</p>
+                        <div>
+                            <input id="rom-d1" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="base">
+                            <span class=" mr-2 text-xl">cm</span>
+                            <input id="rom-d2" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="height">
+                            <span class=" text-xl">cm</span>
+                        </div>
+                        <div>
+                            <span class="">Area</span>
+                            <span id="rohm-area"></span>
+                            <span>cm<sup>2</sup></span>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="rohmbusCalculation()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="w-80 border-gray-600 border-2 rounded-md p-2">
                 <h2 class="text-xl p-4">Area Calculation</h2>
@@ -118,6 +166,7 @@
     <script src="scripts/ractangleCal.js"></script>
     <script src="scripts/parallelogramCal.js"></script>
     <script src="scripts/rohmbosCal.js"></script>
+    <script src="scripts/pentaganCal.js"></script>
 </body>
 
 </html>
