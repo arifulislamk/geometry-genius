@@ -10,6 +10,22 @@ function triangleCalculte(){
     // calculate part 
     const areaInput = document.getElementById('area-text');
     const area = 0.5 * base * height ;
+    if(area < 0 || area === ' ' || area === isNaN){
+        areaInput.innerText = 'not posssible' ;
+    }
+    else{
     areaInput.innerText = area ;
+    }
+
+    const p = document.createElement('p');
+    if(area < 0){
+        p.innerText ='not possible this minus value' ;
+    }
+    else{
+    p.innerText = 'Triangle Area is :   ' + area + 'cm**2' ;
+    }
+
+    const divInput = document.getElementById('div');
+    divInput.appendChild(p)
 }
 
