@@ -1,3 +1,4 @@
+let coutdown = 1 ;
 function triangleCalculte(){
     // get base 
     const baseInput = document.getElementById('base-input');
@@ -10,7 +11,8 @@ function triangleCalculte(){
     // calculate part 
     const areaInput = document.getElementById('area-text');
     const area = 0.5 * base * height ;
-    if(area < 0 || area === ' ' || area === isNaN){
+
+    if(area < 0 || area === ' '){
         areaInput.innerText = 'not posssible' ;
     }
     else{
@@ -22,10 +24,12 @@ function triangleCalculte(){
         p.innerText ='not possible this minus value' ;
     }
     else{
-    p.innerText = 'Triangle Area is :   ' + area + 'cm**2' ;
+    p.innerHTML = coutdown + '. ' + 'Triangle Area is :  ' + area + ' cm <sup>2</sup>' ;
     }
 
     const divInput = document.getElementById('div');
     divInput.appendChild(p)
+    coutdown++ ;
+    
 }
 
