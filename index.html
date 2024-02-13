@@ -16,77 +16,95 @@
         <div class="flex flex-col lg:flex-row gap-2">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                 <!-- trangle card  -->
-                <div class="card w-80 bg-base-100 shadow-xl">
-                    <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                <div class="card w-80 bg-base-100 shadow-xl border-2 border-stone-300 px-2 py-8">
+                    <figure><img class="w-2/3" src="./images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body text-center">
-                        <h2 class="card-title text-2xl flex justify-center">Triangle</h2>
-                        <p class="text-center text-xl">Area (A) = 0.5 * b *h</p>
+                        <h2 class="card-title flex justify-center">Triangle</h2>
+                        <p class="text-center ">Area (A) = 0.5 * b *h</p>
                         <div>
-                            <input id="base-input" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="B">
+                            <input id="base-input" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="B">
                             <span class="mr-2 text-xl">cm</span>
-                            <input id="height-input" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="H">
-                            <span class="ml-2 text-xl">cm</span>
+                            <input id="height-input" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="H">
+                            <span class="text-xl">cm</span>
                         </div>
                         <div>Area <span id="area-text"></span> <span>cm<sup>2</sup></span> </div>
-                        <div  class="card-actions">
+                        <div class="card-actions">
                             <button onclick="triangleCalculte()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- Ractangle card  -->
-                <div class="card w-80 bg-base-100 shadow-xl text-center">
+                <div class="card w-80 bg-base-100 shadow-xl text-center border-2 border-stone-300 px-2 py-8">
                     <figure><img class="w-4/5" src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title flex justify-center">Ractangle</h2>
-                      <p>Area (A) = w * I</p>
-                      <div>
-                        <input id="rac-hight" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="height">
-                        <span class=" mr-2 text-xl" >cm</span>
-                        <input id="rac-width" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="width">
-                        <span class="ml-2 text-xl" >cm</span>
-                      </div>
-                      <div>
-                        <span>Area</span>
-                        <span id="area-rac"></span>
-                        <span>cm<sup>2</sup></span>
-                      </div>
-                      <div class="card-actions justify-end">
-                        <button onclick="calculateRactangle()" id="ractangle-cal" class="btn btn-primary w-full">Calculate</button>
-                      </div>
+                        <h2 class="card-title flex justify-center">Ractangle</h2>
+                        <p>Area (A) = w * I</p>
+                        <div>
+                            <input id="rac-hight" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="height">
+                            <span class=" mr-2 text-xl">cm</span>
+                            <input id="rac-width" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="width">
+                            <span class=" text-xl">cm</span>
+                        </div>
+                        <div>
+                            <span>Area</span>
+                            <span id="area-rac"></span>
+                            <span>cm<sup>2</sup></span>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="calculateRactangle()" id="ractangle-cal"
+                                class="btn btn-primary w-full">Calculate</button>
+                        </div>
                     </div>
-                  </div>
+                </div>
                 <!-- parallelogram card -->
-                <div class="card w-80 bg-base-100 shadow-xl">
-                    <figure><img class="w-11/12" src="images/parallelogram.png"
-                            alt="Shoes" /></figure>
+                <div class="card w-80 bg-base-100 shadow-xl border-2 border-stone-300 px-2 py-8">
+                    <figure><img class="w-11/12" src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">parallelogram</h2>
                         <p>Area (A) = b * h</p>
                         <div>
-                            <input id="pera-base" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="base">
-                            <span class=" mr-2 text-xl" >cm</span>
-                            <input id="pera-height" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="height">
-                            <span class="ml-2 text-xl" >cm</span>
-                          </div>
-                          <div>
+                            <input id="pera-base" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="base">
+                            <span class=" mr-2 text-xl">cm</span>
+                            <input id="pera-height" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="height">
+                            <span class=" text-xl">cm</span>
+                        </div>
+                        <div>
                             <span class="">Area</span>
                             <span id="area-para"></span>
                             <span>cm<sup>2</sup></span>
-                          </div>
+                        </div>
                         <div class="card-actions justify-end">
                             <button onclick="calculatePrallelogram ()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- trangle card  -->
-                <div class="card w-80 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
+                <!-- Rhombus card  -->
+                <div class="card w-80 bg-base-100 shadow-xl border-2 border-stone-300 px-2 py-8">
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 * d1 * d2</p>
+                        <div>
+                            <input id="rom-d1" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="base">
+                            <span class=" mr-2 text-xl">cm</span>
+                            <input id="rom-d2" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="height">
+                            <span class=" text-xl">cm</span>
+                        </div>
+                        <div>
+                            <span class="">Area</span>
+                            <span id="rohm-area"></span>
+                            <span>cm<sup>2</sup></span>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="rohmbusCalculation()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -99,6 +117,7 @@
     <script src="scripts/triangleCal.js"></script>
     <script src="scripts/ractangleCal.js"></script>
     <script src="scripts/parallelogramCal.js"></script>
+    <script src="scripts/rohmbosCal.js"></script>
 </body>
 
 </html>
