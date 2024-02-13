@@ -22,27 +22,27 @@
                         <h2 class="card-title text-2xl flex justify-center">Triangle</h2>
                         <p class="text-center text-xl">Area (A) = 0.5 * b *h</p>
                         <div>
-                            <input id="base-input" class="w-20 pl-2 rounded-md" type="text" placeholder="B">
+                            <input id="base-input" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="B">
                             <span class="mr-2 text-xl">cm</span>
-                            <input id="height-input" class="w-20 pl-2 rounded-md" type="text" placeholder="H">
+                            <input id="height-input" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="H">
                             <span class="ml-2 text-xl">cm</span>
                         </div>
                         <div>Area <span id="area-text"></span> <span>cm<sup>2</sup></span> </div>
-                        <div onclick="triangleCalculte()" class="card-actions">
-                            <button class="btn btn-primary w-full">Buy Now</button>
+                        <div  class="card-actions">
+                            <button onclick="triangleCalculte()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- Ractangle card  -->
                 <div class="card w-80 bg-base-100 shadow-xl text-center">
-                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    <figure><img class="w-4/5" src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title flex justify-center">Ractangle</h2>
                       <p>Area (A) = w * I</p>
                       <div>
-                        <input id="rac-hight" class="w-20 pl-2 rounded-md" type="text" placeholder="height">
+                        <input id="rac-hight" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="height">
                         <span class=" mr-2 text-xl" >cm</span>
-                        <input id="rac-width" class="w-20 pl-2 rounded-md" type="text" placeholder="width">
+                        <input id="rac-width" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="width">
                         <span class="ml-2 text-xl" >cm</span>
                       </div>
                       <div>
@@ -51,19 +51,30 @@
                         <span>cm<sup>2</sup></span>
                       </div>
                       <div class="card-actions justify-end">
-                        <button onclick="calculateRactangle()" id="ractangle-cal" class="btn btn-primary w-full">Buy Now</button>
+                        <button onclick="calculateRactangle()" id="ractangle-cal" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
-                <!-- trangle card  -->
+                <!-- parallelogram card -->
                 <div class="card w-80 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img class="w-11/12" src="images/parallelogram.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">parallelogram</h2>
+                        <p>Area (A) = b * h</p>
+                        <div>
+                            <input id="pera-base" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="base">
+                            <span class=" mr-2 text-xl" >cm</span>
+                            <input id="pera-height" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text" placeholder="height">
+                            <span class="ml-2 text-xl" >cm</span>
+                          </div>
+                          <div>
+                            <span class="">Area</span>
+                            <span id="area-para"></span>
+                            <span>cm<sup>2</sup></span>
+                          </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculatePrallelogram ()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -87,6 +98,7 @@
     </main>
     <script src="scripts/triangleCal.js"></script>
     <script src="scripts/ractangleCal.js"></script>
+    <script src="scripts/parallelogramCal.js"></script>
 </body>
 
 </html>

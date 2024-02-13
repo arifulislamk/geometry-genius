@@ -12,3 +12,4 @@ function triangleCalculte(){
     const area = 0.5 * base * height ;
     areaInput.innerText = area ;
 }
+
