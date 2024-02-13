@@ -132,27 +132,27 @@
                         </div>
                     </div>
                 </div>
-                <!-- Rhombus card  -->
+                <!-- Ellipse card  -->
                 <div class="card w-80 bg-base-100 shadow-xl border-2 border-stone-300 px-2 py-8">
-                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Rhombus</h2>
-                        <p>Area (A) = 0.5 * d1 * d2</p>
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) = πab</p>
                         <div>
-                            <input id="rom-d1" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
-                                placeholder="base">
+                            <input id="eli-aaxis" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="a axis">
                             <span class=" mr-2 text-xl">cm</span>
-                            <input id="rom-d2" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
-                                placeholder="height">
+                            <input id="eli-baxis" class="w-20 pl-2 rounded-md p-2 bg-slate-200" type="text"
+                                placeholder="b axis">
                             <span class=" text-xl">cm</span>
                         </div>
                         <div>
                             <span class="">Area</span>
-                            <span id="rohm-area"></span>
+                            <span id="eli-area"></span>
                             <span>cm<sup>2</sup></span>
                         </div>
                         <div class="card-actions justify-end">
-                            <button onclick="rohmbusCalculation()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="ellipseCalculation()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -167,6 +167,7 @@
     <script src="scripts/parallelogramCal.js"></script>
     <script src="scripts/rohmbosCal.js"></script>
     <script src="scripts/pentaganCal.js"></script>
+    <script src="scripts/ellipseCal.js"></script>
 </body>
 
 </html>
